@@ -1,0 +1,74 @@
+backend:
+  name: github
+  repo: FuzzyReason/fuzzyreason.io
+  branch: master
+
+media_folder: 'static/img/cms'
+
+collections:
+  - name: 'socialNetwork'
+    label: 'Social Network'
+    folder: 'data/social-network'
+    create: true
+    identifier_field: 'type'
+    fields:
+      - {
+        name: 'type',
+        label: 'Type',
+        widget: 'select',
+        options: ['linkedin', 'twitter', 'github', 'mail'],
+        }
+      - { name: 'url', label: 'URL', widget: 'string' }
+  - name: blog
+    label: Blog
+    folder: 'data/blog-posts'
+    create: true
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'blog-post' }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - { name: body, label: Body, widget: markdown }
+  - name: cv
+    label: CV
+    folder: 'data/cv'
+    identifier_field: 'templateKey'
+    create: true
+    fields:
+      - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'cv' }
+      - { label: CV Link, name: cvLink, widget: string, required: true }
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'data/pages/not-found-page.md'
+        label: 'Not Found Page'
+        name: '404'
+        fields:
+            - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'not-found-page' }
+            - { label: PageTitle, name: pageTitle, widget: string }
+            - { label: Title, name: title, widget: string }
+            - { label: Description, name: description, widget: string }
+            - { label: '404 Image', name: notFoundImage, widget: 'image' }
+      - file: 'data/pages/index-page.md'
+        label: 'Landing Page'
+        name: 'index'
+        fields:
+            - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+            - { label: 'PageTitle', name: 'pageTitle', widget: 'string' }
+            - { label: 'Title', name: 'title', widget: 'string' }
+            - { label: 'Page text', name: 'pageText', widget: 'string' }
+      - file: 'data/pages/about-page.md'
+        label: 'About Page'
+        name: 'about'
+        fields:
+            - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'about-page' }
+            - { label: 'Image', name: 'aboutPageImage', widget: 'image' }
+            - { label: 'Title', name: 'title', widget: 'string' }
+            - { label: 'Body', name: 'body', widget: 'markdown' }            
+      - file: 'data/pages/uses-page.md'
+        label: 'Uses Page'
+        name: 'uses'
+        fields:
+            - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'uses-page' }
+            - { label: PageTitle, name: pageTitle, widget: string }
+            - { label: 'Body', name: 'body', widget: 'markdown' }            
