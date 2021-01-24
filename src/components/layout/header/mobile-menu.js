@@ -7,17 +7,21 @@ import { SideMenu } from "../../menu"
 
 import { MenuItem } from "./shared-styles"
 
-const MobileMenu = ({ menuList, siteTitle }) => (
+const MobileMenu = ({ menuList, siteTitle }) => {
+  const menuItems = menuList.map((item) => 
+    <MenuItem to={item.path}>{item.title}</MenuItem>
+  )
+
+  return (
     <>
       <HeaderTitle to="/">{siteTitle}</HeaderTitle>
       <HamburgerButton />
       <SideMenu>
-        {menuList.map((item) => 
-          <MenuItem to={item.path}>{item.title}</MenuItem>
-        )}
+        {menuItems}
       </SideMenu>
     </>
-)
+  )
+}
 
 MobileMenu.propTypes = {
   menuList: PropTypes.arrayOf(PropTypes.shape({

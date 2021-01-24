@@ -16,16 +16,20 @@ const Navbar = styled.div`
   flex-direction: row;
 `
 
-const DesktopMenu = ({ menuList, siteTitle }) => (
+const DesktopMenu = ({ menuList, siteTitle }) => {
+  const menuItems = menuList.map((item) => 
+    <MenuItem to={item.path}>{item.title}</MenuItem>
+  )
+  
+  return (
     <Wrapper>
       <HeaderTitle to="/">{siteTitle}</HeaderTitle>
       <Navbar>
-        {menuList.map((item) => 
-          <MenuItem to={item.path}>{item.title}</MenuItem>
-        )}
+        {menuItems}
       </Navbar>
     </Wrapper>
-)
+  )
+}
 
 DesktopMenu.propTypes = {
   menuList: PropTypes.arrayOf(PropTypes.shape({
