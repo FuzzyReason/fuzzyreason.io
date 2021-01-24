@@ -1,7 +1,7 @@
 ---
 templateKey: about-page
 pageTitle: About
-aboutPageImage: /static/img/cms/photo.png
+aboutPageImage: /img/cms/photo.png
 title: About
 ---
   Hi, I'm Vadim 👋
