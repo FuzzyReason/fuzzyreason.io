@@ -80,6 +80,18 @@ module.exports = {
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Vadim Smirnov | Software Engineer',
+        short_name: 'VS | Software Engineer',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'static/img/me.png',
+      },
+    },
     "gatsby-plugin-offline",
     "gatsby-plugin-netlify",
     "gatsby-plugin-netlify-cms",

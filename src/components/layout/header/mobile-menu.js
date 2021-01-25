@@ -21,7 +21,7 @@ const Wrapper = styled.div`
 
 const MobileMenu = ({ menuList, siteTitle }) => {
   const menuItems = menuList.map((item) => (
-    <MenuItem to={item.path}>{item.title}</MenuItem>
+    <MenuItem key={item.title} to={item.path}>{item.title}</MenuItem>
   ));
 
   return (

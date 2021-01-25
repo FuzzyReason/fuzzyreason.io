@@ -16,7 +16,7 @@ const HeaderDate = styled.h3`
   color: ${colors.grayedTextColor};
 `;
 
-export default ({ data }) => {
+const BlogPostTemplate = ({ data }) => {
   const post = data;
 
   return (
@@ -54,3 +54,5 @@ export const pageQuery = graphql`
     }
   }
 `;
+
+export default BlogPostTemplate;
