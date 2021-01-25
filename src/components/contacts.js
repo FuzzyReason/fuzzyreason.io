@@ -48,7 +48,7 @@ const Contacts = () => {
       {contactsData.map(({ node }) => {
         const Icon = getIcon(node.frontmatter.type);
         return (
-          <ContactsItem to={node.frontmatter.url} key={node.frontmatter.type}>
+          <ContactsItem to={node.frontmatter.url} key={node.frontmatter.type} aria-label={node.frontmatter.type}>
             <Icon />
           </ContactsItem>
         );
