@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import React, { useContext, useRef } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import { useWindowSize } from 'react-use';
 
 import DesktopMenu from "./desktop-menu"
 import MobileMenu from "./mobile-menu"
 import { MenuContext } from "../../../context/nav-state"
 import useOnClickOutside from "../../../hooks/on-click-outside"
-import { useWindowDimensions } from "../../../hooks/window-size"
 import { size } from "../../../constants/window-sizes"
 import { MenuItem } from "./shared-styles"
 
@@ -57,7 +57,7 @@ const Header = () => {
     }
   } = data;
   const node = useRef()
-  const { width } = useWindowDimensions()
+  const { width } = useWindowSize();
   const { isMenuOpen, toggleMenuMode } = useContext(MenuContext)
   useOnClickOutside(node, () => {
     if (isMenuOpen) {

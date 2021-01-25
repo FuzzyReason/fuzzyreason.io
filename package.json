@@ -37,7 +37,8 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "react-use": "^15.3.8"
   },
   "devDependencies": {
     "prettier": "^2.0.5"
@@ -51,6 +52,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.js",
     "start": "npm run develop",
+    "start-m": "gatsby develop -H 0.0.0.0 -p 8000",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },

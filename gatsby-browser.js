@@ -1,5 +1,3 @@
-import React from 'react';
-import { WindowDimensionsProvider } from './src/hooks/window-size';
 import "fontsource-roboto-mono";
 import "fontsource-roboto-mono/500.css";
 import "prism-themes/themes/prism-atom-dark.css";
@@ -12,7 +10,3 @@ export const onServiceWorkerUpdateReady = () => {
         window.location.reload();
     }
 };
-
-const RootElement = ({ element }) => <WindowDimensionsProvider>{element}</WindowDimensionsProvider>;
-
-export const wrapRootElement = RootElement;

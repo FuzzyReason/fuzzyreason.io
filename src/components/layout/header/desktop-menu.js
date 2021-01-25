@@ -20,7 +20,7 @@ const DesktopMenu = ({ menuList, siteTitle }) => {
   const menuItems = menuList.map((item) => 
     <MenuItem to={item.path}>{item.title}</MenuItem>
   )
-  
+
   return (
     <Wrapper>
       <HeaderTitle to="/">{siteTitle}</HeaderTitle>
