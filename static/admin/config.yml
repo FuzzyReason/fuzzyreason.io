@@ -3,7 +3,7 @@ backend:
   repo: FuzzyReason/fuzzyreason.io
   branch: master
 
-media_folder: 'static/img/cms'
+media_folder: '/img/cms'
 
 collections:
   - name: 'socialNetwork'
