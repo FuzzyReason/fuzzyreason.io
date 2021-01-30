@@ -37,7 +37,7 @@ That's about it for the stack to fit my website's needs and make the development
 
 And that's the moment when I can only applause to the Gatsby team without dropping a single word
 
-![Lighthouse stats](/static/img/cms/screenshot-2021-01-31-at-02.46.57.png "Lighthouse stats")
+![Lighthouse stats](/img/cms/screenshot-2021-01-31-at-02.46.57.png "Lighthouse stats")
 
 [fuzzyreason.io](http://fuzzyreason.io/) is not a perfect example to demonstrate Gatsby's performance beauty and power, but it does provide all of the tools necessary to build blazing fast products.
 
