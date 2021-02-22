@@ -12,15 +12,16 @@ const IndexPage = () => {
     query IndexPageData {
       markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
         frontmatter {
-          pageText
           pageTitle
         }
+        html
       }
     }
   `);
   const {
     markdownRemark: {
-      frontmatter: { pageText, pageTitle },
+      frontmatter: { pageTitle },
+      html,
     },
   } = data;
 
@@ -28,7 +29,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title={pageTitle} keywords={[`gatsby`, `application`, `react`]} />
       <Card page={pageTitle} large>
-        <LandingBio pageText={pageText} />
+        <LandingBio pageText={html} />
       </Card>
       <CvButton page={pageTitle} />
     </Layout>

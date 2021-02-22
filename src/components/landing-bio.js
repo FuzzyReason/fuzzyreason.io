@@ -19,7 +19,7 @@ const Description = styled.p`
 
 const LandingBio = ({ pageText }) => (
   <OuterContainer>
-    <Description>{pageText}</Description>
+    <Description dangerouslySetInnerHTML={{ __html: pageText }} />
     <Contacts />
   </OuterContainer>
 );
