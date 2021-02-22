@@ -12,7 +12,7 @@ const OuterContainer = styled.div`
   flex-direction: column;
 `;
 
-const Description = styled.p`
+const Description = styled.div`
   padding: 0;
   margin: 1rem 0;
 `;
