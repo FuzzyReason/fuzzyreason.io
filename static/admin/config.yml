@@ -56,7 +56,7 @@ collections:
             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
             - { label: 'PageTitle', name: 'pageTitle', widget: 'string' }
             - { label: 'Title', name: 'title', widget: 'string' }
-            - { label: 'Page text', name: 'pageText', widget: 'string' }
+            - { label: 'Page text', name: 'body', widget: 'markdown' }
       - file: 'data/pages/about-page.md'
         label: 'About Page'
         name: 'about'
