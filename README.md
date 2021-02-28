@@ -17,12 +17,12 @@
 
 ## Features
 
-- 🛫  Netlify for hosting and Continuous Deployment
-- 🗂  Netlify CMS as content management system
-- 👩‍🎤  Styled Components with [`Emotion`](https://emotion.sh/docs/styled)
-- 🎉  100 scores for Performance, Accessibilty, Best Practices and SEO with [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-- 🌐   Offline support
-- 🤌  Progressive Web App
+- 🛫 &nbsp; Netlify for hosting and Continuous Deployment
+- 🗂 &nbsp; Netlify CMS as content management system
+- 👩‍🎤 &nbsp; Styled Components with [`Emotion`](https://emotion.sh/docs/styled)
+- 🎉 &nbsp; 100 scores for Performance, Accessibilty, Best Practices and SEO with [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+- 🌐 &nbsp; Offline support
+- 🤌 &nbsp; Progressive Web App
 
 Do you see something that can be done better and cooler? [Open an issue](https://github.com/FuzzyReason/fuzzyreason.io/issues/new)!
 
